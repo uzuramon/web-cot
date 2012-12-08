@@ -15,7 +15,14 @@ $(function() {
 
 function funcClick(){
 
-  if ($("#samon-koe0").is(':visible') || $("#sakuve-koe0").is(':visible')) {
+  var visflg = 0;
+  for(g=0;g<characters.length;g++){
+   if ($(characters[g].koeId + "0").is(':visible')){
+     visflg = 1;
+   }
+  }
+
+  if (visflg == 1) {
 
     for(c=0;c<characters.length;c++){
       for(d=0;d<talk;d++){
@@ -65,4 +72,5 @@ characters[1] = {name: "sakube", kotoba: "sakube-kotoba", nameId: "#sakube", koe
 var speed = 500;
 
 var talk = 3;
+
 
