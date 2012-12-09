@@ -1,5 +1,5 @@
 /*
- *
+ *キャラクター表示ポジションの設定
  */
 
 #sannosuke {
@@ -11,43 +11,43 @@
 #sannosuke-koe0 {
   position: fixed;
   bottom: 175px;
-  right: 420px;
+  right: 410px;
 }
 
 #sannosuke-kotoba0 {
   position: fixed;
-  bottom: 190px;
-  right: 428px;
-  width: 100px;
-  height: 50px;
+  bottom: 185px;
+  right: 413px;
+  width: 170px;
+  height: 85px;
 }
 
 #sannosuke-koe1 {
   position: fixed;
-  bottom: 255px;
-  right: 420px;
+  bottom: 280px;
+  right: 410px;
 }
 
 #sannosuke-kotoba1 {
   position: fixed;
-  bottom: 270px;
-  right: 428px;
-  width: 100px;
-  height: 50px;
+  bottom: 290px;
+  right: 413px;
+  width: 170px;
+  height: 85px;
 }
 
 #sannosuke-koe2 {
   position: fixed;
-  bottom: 335px;
-  right: 420px;
+  bottom: 385px;
+  right: 410px;
 }
 
 #sannosuke-kotoba2 {
   position: fixed;
-  bottom: 350px;
-  right: 428px;
-  width: 100px;
-  height: 50px;
+  bottom: 395px;
+  right: 413px;
+  width: 170px;
+  height: 85px;
 }
 
 #sakube {
@@ -59,43 +59,43 @@
 #sakube-koe0 {
   position: fixed;
   bottom: 175px;
-  right: 240px;
+  right: 210px;
 }
 
 #sakube-kotoba0 {
   position: fixed;
-  bottom: 190px;
-  right: 248px;
-  width: 100px;
-  height: 50px;
+  bottom: 185px;
+  right: 213px;
+  width: 170px;
+  height: 85px;
 }
 
 #sakube-koe1 {
   position: fixed;
-  bottom: 255px;
-  right: 240px;
+  bottom: 280px;
+  right: 210px;
 }
 
 #sakube-kotoba1 {
   position: fixed;
-  bottom: 270px;
-  right: 248px;
-  width: 100px;
-  height: 50px;
+  bottom: 290px;
+  right: 213px;
+  width: 170px;
+  height: 85px;
 }
 
 #sakube-koe2 {
   position: fixed;
-  bottom: 335px;
-  right: 240px;
+  bottom: 385px;
+  right: 210px;
 }
 
 #sakube-kotoba2 {
   position: fixed;
-  bottom: 350px;
-  right: 248px;
-  width: 100px;
-  height: 50px;
+  bottom: 395px;
+  right: 213px;
+  width: 170px;
+  height: 85px;
 }
 
 #samon {
@@ -107,41 +107,41 @@
 #samon-koe0 {
   position: fixed;
   bottom: 175px;
-  right: 40px;
+  right: 10px;
 }
 
 #samon-kotoba0 {
   position: fixed;
-  bottom: 190px;
-  right: 48px;
-  width: 100px;
-  height: 50px;
+  bottom: 185px;
+  right: 13px;
+  width: 170px;
+  height: 85px;
 }
 
 #samon-koe1 {
   position: fixed;
-  bottom: 255px;
-  right: 40px;
+  bottom: 280px;
+  right: 10px;
 }
 
 #samon-kotoba1 {
   position: fixed;
-  bottom: 270px;
-  right: 48px;
-  width: 100px;
-  height: 50px;
+  bottom: 290px;
+  right: 13px;
+  width: 170px;
+  height: 85px;
 }
 
 #samon-koe2 {
   position: fixed;
-  bottom: 335px;
-  right: 40px;
+  bottom: 385px;
+  right: 10px;
 }
 
 #samon-kotoba2 {
   position: fixed;
-  bottom: 350px;
-  right: 48px;
-  width: 100px;
-  height: 50px;
+  bottom: 395px;
+  right: 13px;
+  width: 170px;
+  height: 85px;
 }
