@@ -1,0 +1,91 @@
+/*
+ *
+ *
+ *GPLライセンスです。
+ *誰でも自由に
+ *Copyright (c) <year> <copyright holders>
+ */
+
+#sakube {
+  position: fixed;
+  bottom: 0px;
+  right: 200px;
+}
+
+#sakube-koe0 {
+  position: fixed;
+  bottom: 160px;
+  right: 200px;
+}
+
+#sakube-kotoba0 {
+  position: fixed;
+  bottom: 193px;
+  right: 300px;
+}
+
+#sakube-koe1 {
+  position: fixed;
+  bottom: 200px;
+  right: 200px;
+}
+
+#sakube-kotoba1 {
+  position: fixed;
+  bottom: 233px;
+  right: 300px;
+}
+
+#sakube-koe2 {
+  position: fixed;
+  bottom: 240px;
+  right: 200px;
+}
+
+#sakube-kotoba2 {
+  position: fixed;
+  bottom: 273px;
+  right: 300px;
+}
+
+#samon {
+  position: fixed;
+  bottom: 0px;
+  right: 25px;
+}
+
+#samon-koe0 {
+  position: fixed;
+  bottom: 160px;
+  right: 25px;
+}
+
+#samon-kotoba0 {
+  position: fixed;
+  bottom: 193px;
+  right: 140px;
+}
+
+#samon-koe1 {
+  position: fixed;
+  bottom: 200px;
+  right: 25px;
+}
+
+#samon-kotoba1 {
+  position: fixed;
+  bottom: 233px;
+  right: 140px;
+}
+
+#samon-koe2 {
+  position: fixed;
+  bottom: 240px;
+  right: 25px;
+}
+
+#samon-kotoba2 {
+  position: fixed;
+  bottom: 273px;
+  right: 140px;
+}
