@@ -10,8 +10,9 @@ var messages = new Array();
  * mesage: ふきだしに表示するメッセージ
  * char: 画像番号
  */
-messages[0] = [{char: "samon", message: "こっちだー！", imgNumber: 1},
-               {char: "sakube", message: "どこだー！", imgNumber: 1}];
+messages[0] = [{char: "samon", message: "こっちだー！", imgNumber: 2},
+               {char: "sakube", message: "どこだー！", imgNumber: 1},
+               {char: "sannosuke", message: "ここだー！", imgNumber: 3}];
 messages[1] = [{char: "samon", message: "あっちだー！", imgNumber: 2},
                {char: "sakube", message: "そっちじゃねえ！", imgNumber: 2}];
 messages[2] = [{char: "sakube", message: "にげんな！", imgNumber: 2},

@@ -15,6 +15,7 @@ var characters = new Array();
  */
 characters[0] = {name: "samon", kotoba: "samon-kotoba", nameId: "#samon", koeId: "#samon-koe", kotobaId: "#samon-kotoba", loopNum: 0};
 characters[1] = {name: "sakube", kotoba: "sakube-kotoba", nameId: "#sakube", koeId: "#sakube-koe", kotobaId: "#sakube-kotoba", loopNum: 0};
+characters[2] = {name: "sannosuke", kotoba: "sannosuke-kotoba", nameId: "#sannosuke", koeId: "#sannosuke-koe", kotobaId: "#sannosuke-kotoba", loopNum: 0};
 
 
 

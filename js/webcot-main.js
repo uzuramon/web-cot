@@ -54,7 +54,7 @@ function funcClick(){
         document.getElementById(characters[c].kotoba + d).innerHTML="";
 
         //キャラクターの画像を「1」に戻す
-        document.getElementById(characters[c].name).innerHTML="<img src='./img/" + characters[c].name + "-1.png' />";
+        //document.getElementById(characters[c].name).innerHTML="<img src='./img/" + characters[c].name + "-1.png' />";
 
         //ふきだしを非表示にする
         $(characters[c].koeId + d).hide(100);
