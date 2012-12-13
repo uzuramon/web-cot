@@ -3,19 +3,22 @@
  */
 $(function() {
 
+  //メッセージ表示フラグの初期化
+  messageDispFlg = 0;
+
   //キャラクターの数だけ初期化する
-  for(a=0;a<characters.length;a++){
+  for(iChar=0;iChar<characters.length;iChar++){
 
     //キャラクターごとにすべてのふきだしを処理する
-    for(b=0;b<talk;b++){
+    for(iBalloon=0;iBalloon<balloonMax;iBalloon++){
 
       //ふきだしを非表示にする
-      $(characters[a].koeId + b).hide();
-      $(characters[a].kotobaId + b).hide();
+      $(characters[iChar].balloonId + iBalloon).hide();
+      $(characters[iChar].messageId + iBalloon).hide();
     }
 
     //キャラクターのクリックを待つ
-    $(characters[a].nameId).click(function () {
+    $(characters[iChar].nameId).click(function () {
       
       //クリック時の処理関数呼び出し
       funcClick();
@@ -27,76 +30,86 @@ $(function() {
  *キャラクターがクリックされたときに使用する関数
  */
 function funcClick(){
+      
+  //メッセージが表示されている場合
+  if (messageDispFlg == 1) {
 
-  //ふきだしが表示されているか判定する
-  //ふきだし表示用のフラグを初期化
-  var visflg = 0;
-
-  //キャラクターの数だけ判定する
-  for(g=0;g<characters.length;g++){
-
-    //ふきだしが表示されている場合はフラグに1を設定
-    if ($(characters[g].koeId + "0").is(':visible')){
-      visflg = 1;
+    //メッセージ表示フラグの初期化
+    messageDispFlg = 0;
+    
+    //キャラクター表示タイマーの停止
+    for(iTimer=0;iTimer<timer.length;iTimer++){
+      clearTimeout(timer[iTimer]);
     }
-  }
-
-  //ふきだしが表示されていた場合
-  if (visflg == 1) {
-
+    
     //キャラクターの数だけ初期化する
-    for(c=0;c<characters.length;c++){
+    for(iChar=0;iChar<characters.length;iChar++){
 
       //キャラクターごとにすべてのふきだしを処理する
-      for(d=0;d<talk;d++){
+      for(iBalloon=0;iBalloon<balloonMax;iBalloon++){
 
         //ふきだしの文字列を空白にする
-        document.getElementById(characters[c].kotoba + d).innerHTML="";
+        document.getElementById(characters[iChar].messageStr + iBalloon).innerHTML="";
 
         //キャラクターの画像を「1」に戻す
-        //document.getElementById(characters[c].name).innerHTML="<img src='./img/" + characters[c].name + "-1.png' />";
+        //document.getElementById(characters[iChar].nameStr).innerHTML="<img src='./img/" + characters[iChar].nameStr + "-1.png' />";
 
         //ふきだしを非表示にする
-        $(characters[c].koeId + d).hide(100);
-        $(characters[c].kotobaId + d).hide(100);
+        $(characters[iChar].balloonId + iBalloon).hide(100);
+        $(characters[iChar].messageId + iBalloon).hide(100);
       }
 
       //メッセージのループ数を初期化する
-      characters[c].loopNum = 0;
+      characters[iChar].loopNo = 0;
     }
 
-  //ふきだしが表示されていなかった場合
+  //メッセージが表示されていない場合
   } else {
 
+    //メッセージ表示フラグをONにする
+    messageDispFlg = 1;
+
     //ランダムな数値を取得する
-    var randomNum = Math.floor(Math.random()*messages.length)
+    var randomNo = Math.floor(Math.random()*messages.length)
 
-    //メッセージの数だけ処理する
-    for( i=0;i<messages[randomNum].length;i++){
+    //ループ変数の初期化
+    var iLoop=0;
 
-      //メッセージを表示するキャラクターを探す
-      for(k=0;k<characters.length;k++){
+    //setTimeoutを利用してdisplayMessage関数を定義
+    setTimeout(function displayMessage(){
+      
+      //メッセージが終わったらループを抜ける
+      if(!(iLoop<messages[randomNo].length)) return;
 
-        //メッセージを表示するキャラクターの場合
-        if(messages[randomNum][i].char == characters[k].name){
+      //charNoにキャラクター番号をセット
+      var charNo = messages[randomNo][iLoop].charNo;
 
-          //ふきだしの文字列にメッセージを設定する
-          document.getElementById(characters[k].kotoba + characters[k].loopNum).innerHTML=messages[randomNum][i].message;
+      //ふきだしの文字列にメッセージを設定する
+      document.getElementById(characters[charNo].messageStr + characters[charNo].loopNo).innerHTML=messages[randomNo][iLoop].message;
 
-          //キャラクターの画像を設定する
-          document.getElementById(characters[k].name).innerHTML="<img src='./img/" + characters[k].name + "-" + messages[randomNum][i].imgNumber + ".png' />";
+      //キャラクターの画像を設定する
+      document.getElementById(characters[charNo].nameStr).innerHTML="<img src='./img/" + characters[charNo].nameStr + "-" + messages[randomNo][iLoop].imgNo + ".png' />";
 
-          //ふきだしを表示する
-          $(characters[k].koeId + characters[k].loopNum).delay(i*speed).show(100);
-          $(characters[k].kotobaId + characters[k].loopNum).delay(i*speed).show(100);
+      //ふきだしを表示する
+      $(characters[charNo].balloonId + characters[charNo].loopNo).show(100);
+      $(characters[charNo].messageId + characters[charNo].loopNo).show(100);
 
-          //メッセージのループ数を+1
-          characters[k].loopNum++;
-        }
-      }
-    }
+      //メッセージのループ数を+1
+      characters[charNo].loopNo++;
+
+      //ループ変数を+1
+      iLoop++;
+
+      //timerの配列にdisplayMessage関数をセット
+      timer[iLoop] = setTimeout(displayMessage,balloonSpeed);
+    })
   }
 };
 
+  //メッセージ表示フラグの宣言
+  var messageDispFlg = 0;
+
+  //キャラクター表示タイマー配列の宣言
+  var timer = new Array();
 
 

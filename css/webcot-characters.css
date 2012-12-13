@@ -8,13 +8,13 @@
   right: 380px;
 }
 
-#sannosuke-koe0 {
+#sannosuke-balloon0 {
   position: fixed;
   bottom: 175px;
   right: 410px;
 }
 
-#sannosuke-kotoba0 {
+#sannosuke-message0 {
   position: fixed;
   bottom: 185px;
   right: 413px;
@@ -22,13 +22,13 @@
   height: 85px;
 }
 
-#sannosuke-koe1 {
+#sannosuke-balloon1 {
   position: fixed;
   bottom: 280px;
   right: 410px;
 }
 
-#sannosuke-kotoba1 {
+#sannosuke-message1 {
   position: fixed;
   bottom: 290px;
   right: 413px;
@@ -36,13 +36,13 @@
   height: 85px;
 }
 
-#sannosuke-koe2 {
+#sannosuke-balloon2 {
   position: fixed;
   bottom: 385px;
   right: 410px;
 }
 
-#sannosuke-kotoba2 {
+#sannosuke-message2 {
   position: fixed;
   bottom: 395px;
   right: 413px;
@@ -56,13 +56,13 @@
   right: 220px;
 }
 
-#sakube-koe0 {
+#sakube-balloon0 {
   position: fixed;
   bottom: 175px;
   right: 210px;
 }
 
-#sakube-kotoba0 {
+#sakube-message0 {
   position: fixed;
   bottom: 185px;
   right: 213px;
@@ -70,13 +70,13 @@
   height: 85px;
 }
 
-#sakube-koe1 {
+#sakube-balloon1 {
   position: fixed;
   bottom: 280px;
   right: 210px;
 }
 
-#sakube-kotoba1 {
+#sakube-message1 {
   position: fixed;
   bottom: 290px;
   right: 213px;
@@ -84,13 +84,13 @@
   height: 85px;
 }
 
-#sakube-koe2 {
+#sakube-balloon2 {
   position: fixed;
   bottom: 385px;
   right: 210px;
 }
 
-#sakube-kotoba2 {
+#sakube-message2 {
   position: fixed;
   bottom: 395px;
   right: 213px;
@@ -104,13 +104,13 @@
   right: 20px;
 }
 
-#samon-koe0 {
+#samon-balloon0 {
   position: fixed;
   bottom: 175px;
   right: 10px;
 }
 
-#samon-kotoba0 {
+#samon-message0 {
   position: fixed;
   bottom: 185px;
   right: 13px;
@@ -118,13 +118,13 @@
   height: 85px;
 }
 
-#samon-koe1 {
+#samon-balloon1 {
   position: fixed;
   bottom: 280px;
   right: 10px;
 }
 
-#samon-kotoba1 {
+#samon-message1 {
   position: fixed;
   bottom: 290px;
   right: 13px;
@@ -132,13 +132,13 @@
   height: 85px;
 }
 
-#samon-koe2 {
+#samon-balloon2 {
   position: fixed;
   bottom: 385px;
   right: 10px;
 }
 
-#samon-kotoba2 {
+#samon-message2 {
   position: fixed;
   bottom: 395px;
   right: 13px;

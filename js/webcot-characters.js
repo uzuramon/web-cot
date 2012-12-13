@@ -6,16 +6,31 @@ var characters = new Array();
 /*
  *キャラクター
  * 1キャラ単位に配列に保存します。
- * name: キャラクター画像のid（#なし）
- * kotoba: ふきだしのid（#なし、末尾の番号は付けない）
+ * nameStr: キャラクター画像のid（#なし）
+ * messageStr: ふきだしのid（#なし、末尾の番号は付けない）
  * nameId: キャラクター画像のid
- * koeId: ふきだしのid（末尾の番号は付けない）
- * kotobaId: メッセージのid（末尾の番号は付けない）
- * loopNum: ループ回数（初期値＝0）
+ * balloonId: ふきだしのid（末尾の番号は付けない）
+ * messageId: メッセージのid（末尾の番号は付けない）
+ * loopNo: ループ回数（初期値＝0）
  */
-characters[0] = {name: "samon", kotoba: "samon-kotoba", nameId: "#samon", koeId: "#samon-koe", kotobaId: "#samon-kotoba", loopNum: 0};
-characters[1] = {name: "sakube", kotoba: "sakube-kotoba", nameId: "#sakube", koeId: "#sakube-koe", kotobaId: "#sakube-kotoba", loopNum: 0};
-characters[2] = {name: "sannosuke", kotoba: "sannosuke-kotoba", nameId: "#sannosuke", koeId: "#sannosuke-koe", kotobaId: "#sannosuke-kotoba", loopNum: 0};
+characters[0] = {nameStr: "samon", 
+                 messageStr: "samon-message", 
+                 nameId: "#samon", 
+                 balloonId: "#samon-balloon", 
+                 messageId: "#samon-message", 
+                 loopNo: 0};
+characters[1] = {nameStr: "sakube", 
+                 messageStr: "sakube-message", 
+                 nameId: "#sakube", 
+                 balloonId: "#sakube-balloon", 
+                 messageId: "#sakube-message", 
+                 loopNo: 0};
+characters[2] = {nameStr: "sannosuke", 
+                 messageStr: "sannosuke-message", 
+                 nameId: "#sannosuke", 
+                 balloonId: "#sannosuke-balloon", 
+                 messageId: "#sannosuke-message", 
+                 loopNo: 0};
 
 
 

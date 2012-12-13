@@ -1,11 +1,11 @@
 /*
  *ふきだし表示の間隔（ミリ秒）
  */
-var speed = 500;
+var balloonSpeed = 500;
 
 /*
  *1キャラクターあたりのふきだしの最大数
  */
-var talk = 3;
+var balloonMax = 3;
 
 
