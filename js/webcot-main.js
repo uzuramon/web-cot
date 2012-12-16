@@ -24,6 +24,19 @@ $(function() {
       funcClick();
     });
   }
+
+  //画像のプリロード
+  var tagStr = "";
+
+  //画像の数だけタグを生成する
+  for(iImg=0;iImg<charImgFile.length;iImg++){
+    tagStr=tagStr + "<img src='" + charImgFile[iImg] + "' />";
+  }
+
+  //HTMLのimg-cacheに書き出し
+  document.getElementById("img-cache").innerHTML=tagStr;
+
+
 });
 
 /*
@@ -31,8 +44,6 @@ $(function() {
  */
 function funcClick(){
 
-
-      
   //メッセージが表示されている場合
   if (messageDispFlg == 1) {
 

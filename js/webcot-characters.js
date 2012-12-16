@@ -33,5 +33,19 @@ characters[2] = {nameStr: "sannosuke",
                  loopNo: 0};
 
 
+/*
+ *キャラクター画像の定義（プリロード用）
+ */
+var charImgFile= new Array();
 
+charImgFile[0]="./img/samon-1.png";
+charImgFile[1]="./img/samon-2.png";
+charImgFile[2]="./img/samon-3.png";
+charImgFile[3]="./img/sakube-1.png";
+charImgFile[4]="./img/sakube-2.png";
+charImgFile[5]="./img/sannosuke-1.png";
+charImgFile[6]="./img/sannosuke-2.png";
+charImgFile[7]="./img/samon-balloon.png";
+charImgFile[8]="./img/sakube-balloon.png";
+charImgFile[9]="./img/sannosuke-balloon.png";
 
