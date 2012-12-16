@@ -82,6 +82,33 @@ function funcClick(){
     //メッセージ表示フラグをONにする
     messageDispFlg = 1;
 
+    //メッセージ用配列にランダムメッセージを設定
+    var messages = randomMessages;
+    
+    //現在時刻を取得
+    var nowDate = new Date();
+    var nowHours = nowDate.getHours();
+
+    //現在時刻が時間帯の配列に存在していればメッセージをランダムメッセージに連結
+    if (earlyTimes.indexOf(nowHours) >= 0){
+      messages = messages.concat(earlyMessages);
+    }
+    if (morningTimes.indexOf(nowHours) >= 0){
+      messages = messages.concat(morningMessages);
+    }
+    if (afternoonTimes.indexOf(nowHours) >= 0){
+      messages = messages.concat(afternoonMessages);
+    }
+    if (eveningTimes.indexOf(nowHours) >= 0){
+      messages = messages.concat(eveningMessages);
+    }
+    if (nightTimes.indexOf(nowHours) >= 0){
+      messages = messages.concat(nightMessages);
+    }
+    if (lateTimes.indexOf(nowHours) >= 0){
+      messages = messages.concat(lateMessages);
+    }
+    
     //ランダムな数値を取得する
     var randomNo = Math.floor(Math.random()*messages.length)
 
