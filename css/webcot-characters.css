@@ -5,143 +5,143 @@
 #sannosuke {
   position: fixed;
   bottom: 0px;
-  right: 380px;
+  right: 400px;
 }
 
 #sannosuke-balloon0 {
   position: fixed;
-  bottom: 175px;
-  right: 410px;
+  bottom: 200px;
+  right: 400px;
 }
 
 #sannosuke-message0 {
   position: fixed;
-  bottom: 185px;
-  right: 413px;
-  width: 170px;
-  height: 85px;
+  bottom: 220px;
+  right: 420px;
+  width: 160px;
+  height: 80px;
 }
 
 #sannosuke-balloon1 {
   position: fixed;
-  bottom: 280px;
-  right: 410px;
+  bottom: 310px;
+  right: 400px;
 }
 
 #sannosuke-message1 {
   position: fixed;
-  bottom: 290px;
-  right: 413px;
-  width: 170px;
-  height: 85px;
+  bottom: 330px;
+  right: 420px;
+  width: 160px;
+  height: 80px;
 }
 
 #sannosuke-balloon2 {
   position: fixed;
-  bottom: 385px;
-  right: 410px;
+  bottom: 420px;
+  right: 400px;
 }
 
 #sannosuke-message2 {
   position: fixed;
-  bottom: 395px;
-  right: 413px;
-  width: 170px;
-  height: 85px;
+  bottom: 440px;
+  right: 420px;
+  width: 160px;
+  height: 80px;
 }
 
 #sakube {
   position: fixed;
   bottom: 0px;
-  right: 220px;
+  right: 200px;
 }
 
 #sakube-balloon0 {
   position: fixed;
-  bottom: 175px;
-  right: 210px;
+  bottom: 200px;
+  right: 200px;
 }
 
 #sakube-message0 {
   position: fixed;
-  bottom: 185px;
-  right: 213px;
-  width: 170px;
-  height: 85px;
+  bottom: 220px;
+  right: 220px;
+  width: 160px;
+  height: 80px;
 }
 
 #sakube-balloon1 {
   position: fixed;
-  bottom: 280px;
-  right: 210px;
+  bottom: 310px;
+  right: 200px;
 }
 
 #sakube-message1 {
   position: fixed;
-  bottom: 290px;
-  right: 213px;
-  width: 170px;
-  height: 85px;
+  bottom: 330px;
+  right: 220px;
+  width: 160px;
+  height: 80px;
 }
 
 #sakube-balloon2 {
   position: fixed;
-  bottom: 385px;
-  right: 210px;
+  bottom: 420px;
+  right: 200px;
 }
 
 #sakube-message2 {
   position: fixed;
-  bottom: 395px;
-  right: 213px;
-  width: 170px;
-  height: 85px;
+  bottom: 440px;
+  right: 220px;
+  width: 160px;
+  height: 80px;
 }
 
 #samon {
   position: fixed;
   bottom: 0px;
-  right: 20px;
+  right: 0px;
 }
 
 #samon-balloon0 {
   position: fixed;
-  bottom: 175px;
-  right: 10px;
+  bottom: 200px;
+  right: 0px;
 }
 
 #samon-message0 {
   position: fixed;
-  bottom: 185px;
-  right: 13px;
-  width: 170px;
-  height: 85px;
+  bottom: 220px;
+  right: 20px;
+  width: 160px;
+  height: 80px;
 }
 
 #samon-balloon1 {
   position: fixed;
-  bottom: 280px;
-  right: 10px;
+  bottom: 310px;
+  right: 0px;
 }
 
 #samon-message1 {
   position: fixed;
-  bottom: 290px;
-  right: 13px;
-  width: 170px;
-  height: 85px;
+  bottom: 330px;
+  right: 20px;
+  width: 160px;
+  height: 80px;
 }
 
 #samon-balloon2 {
   position: fixed;
-  bottom: 385px;
-  right: 10px;
+  bottom: 420px;
+  right: 0px;
 }
 
 #samon-message2 {
   position: fixed;
-  bottom: 395px;
-  right: 13px;
-  width: 170px;
-  height: 85px;
+  bottom: 440px;
+  right: 20px;
+  width: 160px;
+  height: 80px;
 }

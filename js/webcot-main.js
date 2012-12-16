@@ -30,6 +30,8 @@ $(function() {
  *キャラクターがクリックされたときに使用する関数
  */
 function funcClick(){
+
+
       
   //メッセージが表示されている場合
   if (messageDispFlg == 1) {
