@@ -107,4 +107,3 @@ nightMessages[0] = [{charNo: 0, message: "夜メッセージ", imgNo: 2},
 lateMessages[0] = [{charNo: 0, message: "深夜メッセージ", imgNo: 2},
                     {charNo: 2, message: "メッセージ。", imgNo: 1},
                     {charNo: 1, message: "メッセージ。", imgNo: 1}];
-
